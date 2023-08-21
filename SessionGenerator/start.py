@@ -12,21 +12,26 @@ async def start(bot: Client, msg: Message):
     me2 = (await bot.get_me()).mention
     await bot.send_message(
         chat_id=msg.chat.id,
-        text=f"""Hey {msg.from_user.mention},
+        text=f"""Halo Mek {msg.from_user.mention},
 
-This is {me2},
-an open source string generator bot.
+Ini Bot {me2},
+Bot buat bantu lu pada ngambil STRING PYROGRAM V2 & TELETHON.
 
-Made by : [Cuteboy](tg://user?id={OWNER_ID}) !""",
+Insyaallah Botnya aman mek ga kedeak, tapi kalo kedeak yah lagi sial lu berarti.
+
+Made by : [Si Arab Polos](tg://user?id={OWNER_ID}) !""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(text="Generate Session", callback_data="generate")
+                    InlineKeyboardButton(text="Mulai Buat String", callback_data="generate")
                 ],
                 [
-                    InlineKeyboardButton("Group", url="https://t.me/Aliza_support"),
+                    InlineKeyboardButton("Support", url="https://t.me/SiArabGroup"),
                     InlineKeyboardButton("Owner", user_id=OWNER_ID)
                 ]
+                [
+                    InlineKeyboardButton(text="Jasa Store Si Arab", url="https://t.me/JasaSiArab")
+                ],
             ]
         ),
         disable_web_page_preview=True,
