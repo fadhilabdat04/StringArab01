@@ -29,9 +29,6 @@ Made by : [Si Arab Polos](tg://user?id={OWNER_ID}) !""",
                     InlineKeyboardButton("Support", url="https://t.me/SiArabGroup"),
                     InlineKeyboardButton("Owner", user_id=OWNER_ID)
                 ]
-                [
-                    InlineKeyboardButton(text="Jasa Store Si Arab", url="https://t.me/JasaSiArab")
-                ],
             ]
         ),
         disable_web_page_preview=True,
